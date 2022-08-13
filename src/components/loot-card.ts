@@ -1,6 +1,7 @@
 
 import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js';
+import { getLoot } from '../APP_API';
 import { SharedStyles } from '../styles/SharedStyles';
 
 @customElement('loot-card')
@@ -65,6 +66,11 @@ export class LootCard extends LitElement {
         </div>
       </div>
      `;
+  }
+  
+  override firstUpdated() {
+    console.log('meme');
+    getLoot();
   }
 }
 

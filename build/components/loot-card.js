@@ -6,6 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js';
+import { getLoot } from '../APP_API';
 import { SharedStyles } from '../styles/SharedStyles';
 let LootCard = class LootCard extends LitElement {
     /**
@@ -47,6 +48,10 @@ let LootCard = class LootCard extends LitElement {
         </div>
       </div>
      `;
+    }
+    firstUpdated() {
+        console.log('meme');
+        getLoot();
     }
 };
 LootCard.styles = [

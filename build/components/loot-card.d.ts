@@ -5,6 +5,7 @@ export declare class LootCard extends LitElement {
      * The number of times the button has been clicked.
      */
     render(): import("lit-html").TemplateResult<1>;
+    firstUpdated(): void;
 }
 declare global {
     interface HTMLElementTagNameMap {
