@@ -1,4 +1,5 @@
 import { LitElement } from 'lit';
+import './views/loot-view';
 export declare class AppRoot extends LitElement {
     static styles: import("lit").CSSResult;
     count: number;

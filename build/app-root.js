@@ -6,6 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import './views/loot-view';
 let AppRoot = class AppRoot extends LitElement {
     constructor() {
         super(...arguments);
@@ -24,9 +25,9 @@ let AppRoot = class AppRoot extends LitElement {
     }
     render() {
         return html `
-       <main>
-        <h1>main works</h1>
-       </main>
+      <main>
+        <loot-view></loot-view>
+      </main>
      `;
     }
 };

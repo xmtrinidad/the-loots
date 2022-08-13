@@ -6,11 +6,16 @@
     <title>&lt;my-element> Demo</title>
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../app-root.js"></script>
+    <script type="module" src="../build/app-root.js"></script>
     <style>
-      p {
-        border: solid 1px blue;
-        padding: 8px;
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        font-family: 'Poppins', sans-serif;
       }
     </style>
   </head>
